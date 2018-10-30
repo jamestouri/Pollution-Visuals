@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.50.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.50.0/mapbox-gl.css' rel='stylesheet' />
+</head>
+<body>
+    <div id='map' style='width: 400px; height: 300px;'></div>
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoiamFtZXN0b3VyaSIsImEiOiJjam52eHcxZTEwZGw1M2txbnhuYWc1MmE2In0.FWBmz1vmgKBX0kLDEpQozg';
+        var map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/mapbox/streets-v10'
+        });
+    </script>
+
+    
+      <div class="content">
+        <h1>Webpack Boilerplate</h1>
+        <h3>Replace this page with your own code</h3>
+    </div>
+</body>
+</html>
