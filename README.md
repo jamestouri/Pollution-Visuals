@@ -7,4 +7,4 @@ Pollution has been a known problem for many years, and has continued to skyrocke
 There will be view the entire global map with tabs every decade starting from 1980 that shows the rise in pollution. Based on the polluted area will be taller three dimensional blocks that can range in colors from yellow to red, with red being a very polluted area.
 
 ## Architecture and Technologies
-Visualization of the pollution will be rendered through the d3 library. Polluted historical data will be from (world bank)[http://www.worldbank.org/en/topic/environment/brief/pollution] and the geographical map will be rendered from an api site called (MapBox)[https://www.mapbox.com/mapbox-gl-js/api/]
+Visualization of the pollution will be rendered through the d3 library. Polluted historical data will be from the [world bank](http://www.worldbank.org/en/topic/environment/brief/pollution) and the geographical map will be rendered from an api site called [MapBox](https://www.mapbox.com/mapbox-gl-js/api/)
