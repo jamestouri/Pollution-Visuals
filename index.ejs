@@ -10,6 +10,8 @@
 <body>
     <div id='map' style='width: 2000px; height: 1000px;'></div>
     <script>
+        const apiKey = '6b21f5f380b84d7eb94899307af5124a';
+
         mapboxgl.accessToken = 'pk.eyJ1IjoiamFtZXN0b3VyaSIsImEiOiJjam52eHcxZTEwZGw1M2txbnhuYWc1MmE2In0.FWBmz1vmgKBX0kLDEpQozg';
         var map = new mapboxgl.Map({
             container: 'map',
@@ -18,6 +20,16 @@
             center: [-119.7674, 39.1638]
         });
         
+        map.on('load', function () {
+            map.addLayer ({
+                'type': 'circle',
+                'source': {
+                    type: 'vector',
+                    url: 'https://tiles.breezometer.com/{z}/{x}/{y}.png?key=' + apiKey,
+
+                }
+            })
+        }
     </script>
 
     
